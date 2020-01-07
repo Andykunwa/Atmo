@@ -1,0 +1,13 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<div class="container-fluid jumbotron">
+    <div class="col-lg">
+        <img class="icon" src={{iconPNG}} alt="weather pic" style="width: 120px; height: 120px;">
+        <h2 class="weather">{{weather.weather[0].main}}</h2>
+        <h3 class="temp">{{temperature}} F</h3>
+        <hr class="my-4">
+    </div>
+    <div class="col-lg">
+        <iframe [src]="iframe" width="700" height="265" frameborder="5" allowtransparency="true" allow="encrypted-media"></iframe>
+    </div>
+</div>
